@@ -18,11 +18,11 @@ const baseTokenColors = base.tokenColors.map((rule) => {
 
 const theme = {
   ...base,
-  name: "Gruvbox Material Dark Custom",
+  name: "Gruvbox Flutter Theme",
   colors: { ...base.colors, ...overrides.colors },
   // Later rules win at equal scope specificity, so overrides go last.
   tokenColors: [...baseTokenColors, ...overrides.tokenColors.map((r) => ({ name: "Custom override", ...r }))],
 };
 
-fs.writeFileSync(path.join(dir, "gruvbox-material-dark-custom.json"), JSON.stringify(theme, null, "\t") + "\n");
+fs.writeFileSync(path.join(dir, "gruvbox-flutter-theme.json"), JSON.stringify(theme, null, "\t") + "\n");
 console.log(`Built: ${Object.keys(theme.colors).length} colors, ${theme.tokenColors.length} token rules`);

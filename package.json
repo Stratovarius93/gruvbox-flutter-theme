@@ -1,8 +1,8 @@
 {
-  "name": "gruvbox-material-custom",
-  "displayName": "Gruvbox Material Dark Custom",
-  "description": "Personal variant of Gruvbox Material Dark with custom workbench and token colors",
-  "version": "1.0.8",
+  "name": "gruvbox-flutter-theme",
+  "displayName": "Gruvbox Flutter Theme",
+  "description": "Gruvbox Material Dark variant tuned for Flutter/Dart, with custom workbench and token colors",
+  "version": "1.1.0",
   "publisher": "stratovarius93",
   "author": "Stratovarius93",
   "license": "MIT",
@@ -20,6 +20,8 @@
   "keywords": [
     "gruvbox",
     "gruvbox-material",
+    "flutter",
+    "dart",
     "theme",
     "dark"
   ],
@@ -30,9 +32,9 @@
   "contributes": {
     "themes": [
       {
-        "label": "Gruvbox Material Dark Custom",
+        "label": "Gruvbox Flutter Theme",
         "uiTheme": "vs-dark",
-        "path": "./themes/gruvbox-material-dark-custom.json"
+        "path": "./themes/gruvbox-flutter-theme.json"
       }
     ]
   },
