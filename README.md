@@ -7,6 +7,7 @@ Personal variant of [Gruvbox Material](https://github.com/sainnhe/gruvbox-materi
 - `themes/gruvbox-material-dark.base.json` — upstream theme (v6.5.2, generated output, medium contrast)
 - `themes/overrides.json` — personal changes (`colors` + `tokenColors`)
 - `themes/gruvbox-flutter-theme.json` — merged theme (generated, do not edit by hand)
+- `iconthemes/gruvbox-material-icons.json` + `icons/` — file icon theme **Gruvbox Flutter Icons**, copied from [gruvbox-material-icons](https://github.com/navernoedenis/gruvbox-material-icons) v4.7.0 (only the SVGs it references)
 
 ## Edit colors
 
@@ -16,7 +17,8 @@ Personal variant of [Gruvbox Material](https://github.com/sainnhe/gruvbox-materi
 
 ## Credits
 
-Based on Gruvbox Material © 2020 sainnhe, MIT License.
+- Color theme based on Gruvbox Material © 2020 sainnhe, MIT License (`LICENSE`).
+- File icons from gruvbox-material-icons © 2025 navernoedenis, MIT License (`THIRD_PARTY_LICENSE-gruvbox-material-icons.txt`).
 
 ## Dart notes
 
