@@ -2,7 +2,7 @@
   "name": "gruvbox-material-custom",
   "displayName": "Gruvbox Material Dark Custom",
   "description": "Personal variant of Gruvbox Material Dark with custom workbench and token colors",
-  "version": "1.0.4",
+  "version": "1.0.8",
   "publisher": "stratovarius93",
   "author": "Stratovarius93",
   "license": "MIT",
@@ -33,16 +33,6 @@
         "label": "Gruvbox Material Dark Custom",
         "uiTheme": "vs-dark",
         "path": "./themes/gruvbox-material-dark-custom.json"
-      }
-    ],
-    "semanticTokenScopes": [
-      {
-        "language": "dart",
-        "scopes": {
-          "string": [
-            "meta.semantic-string.dart"
-          ]
-        }
       }
     ]
   },

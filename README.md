@@ -18,6 +18,8 @@ Personal variant of [Gruvbox Material](https://github.com/sainnhe/gruvbox-materi
 
 Based on Gruvbox Material © 2020 sainnhe, MIT License.
 
-## Dart: no color flicker on startup
+## Dart notes
 
-When a Dart file opens, VS Code first colors it with the TextMate grammar and then, a few seconds later, the Dart analysis server applies semantic tokens. The overrides make both phases produce the same colors (types, keywords, identifiers, annotations, doc references). The theme also maps the Dart semantic `string` token to an unstyled scope, so strings keep their grammar colors: import/export URIs in green, all other strings in yellow.
+When a Dart file opens, VS Code first colors it with the TextMate grammar and then, a few seconds later, the Dart analysis server applies semantic tokens. The overrides make the grammar colors match the semantic ones (types, keywords, annotations, doc references) to minimize color changes on load.
+
+Import/export URIs are green while other strings stay yellow, even with semantic highlighting on. Semantic `string` tokens resolve against the generic `string` selector, so `overrides.json` → `replaceScopes` swaps it for specific selectors (`string.quoted`, `string.interpolated`, …). Semantic strings then get no theme color and keep the grammar's color.

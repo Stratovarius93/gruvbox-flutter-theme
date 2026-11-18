@@ -116,12 +116,12 @@
       }
     },
     {
-      "name": "Dart: plain identifiers match semantic variable/property color",
+      "name": "Dart: plain identifiers (variables, params, properties)",
       "scope": [
         "source.dart"
       ],
       "settings": {
-        "foreground": "#d4be98"
+        "foreground": "#f2e7ca"
       }
     },
     {
@@ -145,20 +145,31 @@
     {
       "name": "Dart: import/export URIs in green",
       "scope": [
-        "meta.declaration.dart string"
+        "meta.declaration.dart string.interpolated.single.dart",
+        "meta.declaration.dart string.interpolated.double.dart",
+        "meta.declaration.dart string.quoted.single.dart",
+        "meta.declaration.dart string.quoted.double.dart"
       ],
       "settings": {
         "foreground": "#a9b665"
       }
-    },
-    {
-      "name": "Dart: import/library keywords match semantic keyword color",
-      "scope": [
-        "keyword.other.import.dart"
-      ],
-      "settings": {
-        "foreground": "#ea6962"
-      }
     }
-  ]
+  ],
+  "replaceScopes": {
+    "string": [
+      "string.quoted",
+      "string.unquoted",
+      "string.interpolated",
+      "string.template",
+      "string.regexp",
+      "string.other",
+      "string.definition",
+      "string.json",
+      "string.tag",
+      "string.docstring",
+      "string.key",
+      "string.heredoc"
+    ]
+  },
+  "_comment_replaceScopes": "The generic 'string' selector is what semantic 'string' tokens resolve to. Replacing it with specific selectors keeps every grammar string yellow but lets Dart semantic strings keep grammar colors (green import URIs)."
 }
