@@ -9,7 +9,7 @@
   "icon": "icon.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Stratovarius93/gruvbox-material-custom.git"
+    "url": "https://github.com/Stratovarius93/gruvbox-flutter-theme.git"
   },
   "engines": {
     "vscode": "^1.70.0"
