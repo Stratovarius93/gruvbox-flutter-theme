@@ -169,7 +169,11 @@
       "string.docstring",
       "string.key",
       "string.heredoc"
+    ],
+    "keyword": [
+      "source keyword",
+      "text keyword"
     ]
   },
-  "_comment_replaceScopes": "The generic 'string' selector is what semantic 'string' tokens resolve to. Replacing it with specific selectors keeps every grammar string yellow but lets Dart semantic strings keep grammar colors (green import URIs)."
+  "_comment_replaceScopes": "The generic 'string' selector is what semantic 'string' tokens resolve to. Replacing it with specific selectors keeps every grammar string yellow but lets Dart semantic strings keep grammar colors (green import URIs). Same for \"keyword\": with a parent selector, semantic keyword tokens (Dart LSP marks import/class/final/... alike) no longer override the grammar color, so `import` stays fuchsia."
 }
