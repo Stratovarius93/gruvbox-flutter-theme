@@ -94,6 +94,71 @@
       "settings": {
         "foreground": "#d8a657"
       }
+    },
+    {
+      "name": "Dart: classes/types match semantic class color",
+      "scope": [
+        "support.class.dart"
+      ],
+      "settings": {
+        "foreground": "#7daea3"
+      }
+    },
+    {
+      "name": "Dart: this/super and modifiers match semantic keyword color",
+      "scope": [
+        "variable.language.dart",
+        "storage.modifier.dart",
+        "storage.type.primitive.dart"
+      ],
+      "settings": {
+        "foreground": "#ea6962"
+      }
+    },
+    {
+      "name": "Dart: plain identifiers match semantic variable/property color",
+      "scope": [
+        "source.dart"
+      ],
+      "settings": {
+        "foreground": "#d4be98"
+      }
+    },
+    {
+      "name": "Dart: annotations match semantic annotation color",
+      "scope": [
+        "storage.type.annotation.dart"
+      ],
+      "settings": {
+        "foreground": "#d4be98"
+      }
+    },
+    {
+      "name": "Dart: doc comment references match semantic function color",
+      "scope": [
+        "variable.name.source.dart"
+      ],
+      "settings": {
+        "foreground": "#a9b665"
+      }
+    },
+    {
+      "name": "Dart: import/export URIs in green",
+      "scope": [
+        "meta.declaration.dart string"
+      ],
+      "settings": {
+        "foreground": "#a9b665"
+      }
+    },
+    {
+      "name": "Dart: import/library keywords match semantic keyword color",
+      "scope": [
+        "keyword.other.import.dart"
+      ],
+      "settings": {
+        "foreground": "#ea6962"
+      }
     }
   ]
 }
