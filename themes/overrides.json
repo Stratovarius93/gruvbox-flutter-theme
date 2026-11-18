@@ -85,6 +85,15 @@
       "settings": {
         "foreground": "#f2e7ca"
       }
+    },
+    {
+      "scope": [
+        "string.interpolated.single.dart",
+        "string.interpolated.double.dart"
+      ],
+      "settings": {
+        "foreground": "#d8a657"
+      }
     }
   ]
 }
