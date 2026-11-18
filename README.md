@@ -15,6 +15,31 @@ Personal variant of [Gruvbox Material](https://github.com/sainnhe/gruvbox-materi
 2. `npm run package` → produces `gruvbox-flutter-theme-x.y.z.vsix`
 3. Install: Command Palette → **Extensions: Install from VSIX...** (or `antigravity --install-extension <file>.vsix`)
 
+## Use the icons
+
+The extension ships two independent themes; pick each one separately:
+
+- Color theme: Command Palette → **Preferences: Color Theme** → **Gruvbox Flutter Theme**
+- File icons: Command Palette → **Preferences: File Icon Theme** → **Gruvbox Flutter Icons**
+
+Or in `settings.json`:
+
+```jsonc
+"workbench.colorTheme": "Gruvbox Flutter Theme",
+"workbench.iconTheme": "gruvbox-flutter-icons"
+```
+
+If you had the original `navernoedenis.gruvbox-material-icons` installed, you can uninstall it; the icons look the same.
+
+## Update the icons
+
+The icons are a static copy of the original extension's generated `dist/material-icons.json`. The settings and commands that the original extension offers for customizing its icons do not apply here. To refresh them from a newer release:
+
+1. Install the latest `navernoedenis.gruvbox-material-icons` temporarily
+2. Copy its `dist/material-icons.json` to `iconthemes/gruvbox-material-icons.json`
+3. Replace `icons/` with only the SVGs referenced by that JSON (paths are `./../icons/<file>.svg`)
+4. Update the version noted under **Structure**, bump `package.json`, `npm run package`, reinstall and uninstall the original again
+
 ## Credits
 
 - Color theme based on Gruvbox Material © 2020 sainnhe, MIT License (`LICENSE`).
