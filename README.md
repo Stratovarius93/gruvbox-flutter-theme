@@ -61,6 +61,17 @@ With [lazy.nvim](https://github.com/folke/lazy.nvim):
 
 For the closest match with VS Code, enable Treesitter highlighting with the `dart` parser and the Dart LSP (`dart language-server`), whose semantic tokens color methods, variables and enum members. The palette is maintained by hand: when you change a color in `themes/overrides.json`, update `M.palette` too.
 
+## Warp
+
+`warp/gruvbox_flutter.yaml` is a [Warp](https://www.warp.dev) terminal theme with the same background, foreground, cursor and ANSI colors as the VS Code terminal. Bright colors use classic Gruvbox so bold/bright text stands out, and ANSI black is `#3c3836` so it stays visible on the background.
+
+```sh
+mkdir -p ~/.warp/themes
+cp warp/gruvbox_flutter.yaml ~/.warp/themes/
+```
+
+Then pick **Gruvbox Flutter** in Warp → Settings → Appearance → Themes.
+
 ## Credits
 
 - Color theme based on Gruvbox Material © 2020 sainnhe, MIT License (`LICENSE`).
