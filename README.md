@@ -40,6 +40,27 @@ The icons are a static copy of the original extension's generated `dist/material
 3. Replace `icons/` with only the SVGs referenced by that JSON (paths are `./../icons/<file>.svg`)
 4. Update the version noted under **Structure**, bump `package.json`, `npm run package`, reinstall and uninstall the original again
 
+## Neovim
+
+The same colors are available as a Neovim colorscheme (Neovim 0.10+, `termguicolors`). The repo root is a Neovim plugin; the VS Code package excludes these files.
+
+- `lua/gruvbox-flutter/init.lua` — palette and highlight groups (UI, Treesitter, LSP semantic tokens, diagnostics, common plugins)
+- `colors/gruvbox-flutter.lua` — `:colorscheme gruvbox-flutter`
+- `queries/dart/highlights.scm` — extra Dart captures so Treesitter matches the VS Code grammar (green import URIs, red `void`, orange `is`, grey `.`)
+
+With [lazy.nvim](https://github.com/folke/lazy.nvim):
+
+```lua
+{
+  "Stratovarius93/gruvbox-flutter-theme",
+  lazy = false,
+  priority = 1000,
+  config = function() vim.cmd.colorscheme("gruvbox-flutter") end,
+}
+```
+
+For the closest match with VS Code, enable Treesitter highlighting with the `dart` parser and the Dart LSP (`dart language-server`), whose semantic tokens color methods, variables and enum members. The palette is maintained by hand: when you change a color in `themes/overrides.json`, update `M.palette` too.
+
 ## Credits
 
 - Color theme based on Gruvbox Material © 2020 sainnhe, MIT License (`LICENSE`).

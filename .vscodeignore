@@ -3,3 +3,7 @@ themes/gruvbox-material-dark.base.json
 themes/overrides.json
 *.vsix
 .gitignore
+colors/**
+lua/**
+queries/**
+.nvim-sample/**
