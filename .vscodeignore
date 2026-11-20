@@ -6,4 +6,3 @@ themes/overrides.json
 colors/**
 lua/**
 queries/**
-.nvim-sample/**
