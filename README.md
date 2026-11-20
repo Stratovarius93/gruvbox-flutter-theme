@@ -63,7 +63,7 @@ For the closest match with VS Code, enable Treesitter highlighting with the `dar
 
 ## Warp
 
-`warp/gruvbox_flutter.yaml` is a [Warp](https://www.warp.dev) terminal theme with the same background, foreground, cursor and ANSI colors as the VS Code terminal. Bright colors use classic Gruvbox so bold/bright text stands out, and ANSI black is `#3c3836` so it stays visible on the background.
+`warp/gruvbox_flutter.yaml` is a [Warp](https://www.warp.dev) terminal theme with the same background, foreground, cursor and ANSI colors as the VS Code terminal (bright colors from classic Gruvbox, ANSI black `#3c3836` so it stays visible on the background).
 
 ```sh
 mkdir -p ~/.warp/themes
